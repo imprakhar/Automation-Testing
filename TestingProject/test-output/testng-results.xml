@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="93738" started-at="2019-09-28T14:23:11Z" finished-at="2019-09-28T14:24:45Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="93738" started-at="2019-09-28T14:23:11Z" finished-at="2019-09-28T14:24:45Z">
+      <class name="selenium.Flipkart">
+        <test-method status="PASS" signature="browser()[pri:1, instance:selenium.Flipkart@2eda0940]" name="browser" duration-ms="14114" started-at="2019-09-28T14:23:11Z" finished-at="2019-09-28T14:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="readCredentials()[pri:2, instance:selenium.Flipkart@2eda0940]" name="readCredentials" duration-ms="5306" started-at="2019-09-28T14:23:25Z" finished-at="2019-09-28T14:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readCredentials -->
+        <test-method status="PASS" signature="cart()[pri:3, instance:selenium.Flipkart@2eda0940]" name="cart" duration-ms="31287" started-at="2019-09-28T14:23:30Z" finished-at="2019-09-28T14:24:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart -->
+        <test-method status="FAIL" signature="sikuliMethod()[pri:4, instance:selenium.Flipkart@2eda0940]" name="sikuliMethod" duration-ms="41070" started-at="2019-09-28T14:24:02Z" finished-at="2019-09-28T14:24:43Z">
+          <exception class="org.sikuli.script.FindFailed">
+            <message>
+              <![CDATA[can not find P(C:/Users/Prakhar Fanse/Documents/workspace-spring-tool-suite-4-4.3.2.RELEASE/TestingProject/TestData/Phone.JPG) S: 0.7 in S(0)[0,0 1920x1080]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[FindFailed: can not find P(C:/Users/Prakhar Fanse/Documents/workspace-spring-tool-suite-4-4.3.2.RELEASE/TestingProject/TestData/Phone.JPG) S: 0.7 in S(0)[0,0 1920x1080]
+  Line 2189, in file Region.java
+
+at org.sikuli.script.Region.handleFindFailedShowDialog(Region.java:2189)
+at org.sikuli.script.Region.handleFindFailed(Region.java:2134)
+at org.sikuli.script.Region.wait(Region.java:2546)
+at org.sikuli.script.Region.find(Region.java:2205)
+at org.sikuli.script.Region.getLocationFromTarget(Region.java:3067)
+at org.sikuli.script.Region.click(Region.java:3534)
+at org.sikuli.script.Region.click(Region.java:3519)
+at selenium.Flipkart.sikuliMethod(Flipkart.java:88)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.sikuli.script.FindFailed -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sikuliMethod -->
+        <test-method status="FAIL" signature="addToCart()[pri:5, instance:selenium.Flipkart@2eda0940]" name="addToCart" duration-ms="163" started-at="2019-09-28T14:24:43Z" finished-at="2019-09-28T14:24:43Z">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 1, Size: 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at selenium.Flipkart.addToCart(Flipkart.java:97)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="screenShot()[pri:0, instance:selenium.Flipkart@2eda0940]" name="screenShot" is-config="true" duration-ms="1491" started-at="2019-09-28T14:24:43Z" finished-at="2019-09-28T14:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- selenium.Flipkart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
